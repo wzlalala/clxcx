@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/productlist/productlist",
+    "pages/productlists/productlists",
+    "pages/productdetails/productdetails",
+    "pages/linkus/linkus"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#181818",
+    "navigationBarTitleText": "郑州悦之奇商贸有限公司",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#B96505",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homec.png"
+      },
+      {
+        "pagePath": "pages/productlist/productlist",
+        "text": "产品列表",
+        "iconPath": "images/cate.png",
+        "selectedIconPath": "images/catec.png"
+      },
+      {
+        "pagePath": "pages/linkus/linkus",
+        "text": "联系我们",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/userc.png"
+      }
+    ]
+  }
+}

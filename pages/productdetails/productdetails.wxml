@@ -1,0 +1,25 @@
+<import src='../../components/star/star.wxml' />
+<import src='../../components/comment/comment.wxml' />
+<import src="../../wxParse/wxParse.wxml"/>
+<view>
+  <view class='top'>
+   <image src="{{goods.news_img}}" class="banner" mode="aspectFill" bindtap='banner' data-index='{{index}}'></image>
+   
+    <view class='marsk'></view>
+    <view class='info'>
+      <view class='name'>{{goods.news_title}}</view>
+    </view>
+  </view>
+ 
+  <view class='grounp border_top_bottom'>
+    <view class='title'>商品详情</view>
+   
+    <view class="wxParse">  
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>  
+    </view>
+  
+  </view>
+  <view>
+   <button bindtap="goproductlist" type="normal" class="productlistbtn">产品列表</button>
+  </view>
+</view>

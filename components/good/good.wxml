@@ -1,0 +1,22 @@
+<template name='good'>
+	<view class='good' catchtap="itemclick" data-id="{{good.n_id}}">
+		<image src="{{good.news_img}}" mode="aspectFill"></image>
+		<view class='mask'></view>
+		<view class='info'>
+			<view class='title'>
+				<text>{{good.news_title}}</text>
+			</view>
+			<view class='detail'>
+				<view class='timeinfo'>
+				<text>{{good.address}}</text>
+				
+				</view>
+				<view class='address' >
+				<text>{{good.km}}</text>
+				
+				</view>
+			</view>
+
+		</view>
+	</view>
+</template>

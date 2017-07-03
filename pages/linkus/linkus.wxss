@@ -1,0 +1,13 @@
+@import '../../components/comment/comment.wxss';
+page {
+  background-color: #fff;
+}
+
+.linkusimg{
+    width:750rpx;
+    height:400rpx;
+}
+.linkusimg .img{
+   width:750rpx;
+    height:500rpx;
+}

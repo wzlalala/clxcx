@@ -1,0 +1,9 @@
+<import src='../../components/star/star.wxml' />
+<import src='../../components/comment/comment.wxml' />
+<import src="../../wxParse/wxParse.wxml" />
+<view class="linkusimg">
+<image src="{{linkus.menu_img}}" class="img" ></image>
+</view>
+<view class="wxParse linkus-con">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>

@@ -1,0 +1,37 @@
+<import src="../../components/good/good.wxml" />
+<!--index.wxml-->
+<scroll-view class='scroller' style="width:{{width}}px;height:{{height}}px;" scroll-y="true" lower-threshold="800" bindscrolltolower="loadmore">
+  <swiper class='banners' indicator-dots="true" autoplay="true" interval="4000" duration="1000" indicator-color="#60ffffff" indicator-active-color="#fff">
+    <block wx:for="{{banner}}" wx:key="*this">
+      <swiper-item>
+
+        <image src="{{item.plug_ad_pic}}" class="banner" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='funcs'>
+    <view class='func' wx:for="{{functions}}" wx:for-item='item' wx:key='item.id' bindtap='menuclick' data-name="{{item.name}}" data-id="{{item.id}}">
+      <image src="{{item.url}}" mode="aspectFill"></image>
+      <view class='name'>{{item.name}}</view>
+    </view>
+  </view>
+
+
+  <!--为你推荐-->
+    <view class="Recommend ">推荐产品</view>
+
+    <!--列表list组件 -->
+ <view class="film">
+      <block wx:for="{{goods}}" wx:for-index="filmIndex" wx:for-item="filmItem" wx:key="film">
+            <view data-id="{{filmItem.id}}" class="film-item" bindtap="itemclick" data-id="{{filmItem.n_id}}">
+                <view class="film-cover">
+                    <image src="{{filmItem.news_img}}" class="film-cover-img"></image>
+                    <view class="film-rating">
+                            {{filmItem.news_title}}                     
+                    </view>
+                </view>
+            </view>
+        </block>
+  </view>      
+</scroll-view>
